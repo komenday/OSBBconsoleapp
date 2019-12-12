@@ -1,0 +1,9 @@
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Debug\OSBBConsoleApp.exe.config
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Debug\OSBBConsoleApp.exe
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Debug\OSBBConsoleApp.pdb
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\obj\Debug\OSBBConsoleApp.csproj.CopyComplete
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\obj\Debug\OSBBConsoleApp.exe
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\obj\Debug\OSBBConsoleApp.pdb
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\obj\Debug\OSBBConsoleApp.csprojAssemblyReference.cache
