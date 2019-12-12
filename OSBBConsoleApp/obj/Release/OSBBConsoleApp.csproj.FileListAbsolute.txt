@@ -1,0 +1,14 @@
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Release\OSBBConsoleApp.exe.config
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Release\OSBBConsoleApp.exe
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Release\OSBBConsoleApp.pdb
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Release\Newtonsoft.Json.dll
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Release\Newtonsoft.Json.xml
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\obj\Release\OSBBConsoleApp.csprojAssemblyReference.cache
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\obj\Release\OSBBConsoleApp.csproj.CopyComplete
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\obj\Release\OSBBConsoleApp.exe
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\obj\Release\OSBBConsoleApp.pdb
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Release\OSBBConsoleApp.exe.manifest
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Release\OSBBConsoleApp.application
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\obj\Release\OSBBConsoleApp.exe.manifest
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\obj\Release\OSBBConsoleApp.application
+C:\Users\komen\OneDrive\Документы\GitHub\OSBBConsoleApp\OSBBconsoleapp\OSBBConsoleApp\bin\Release\Settings.job
