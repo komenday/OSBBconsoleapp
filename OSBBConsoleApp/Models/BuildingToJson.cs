@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace OSBBConsoleApp.Models
 {
+    // Сlass designed for pulling data to json file
     class BuildingToJson
     {
         public Building House { get; set; }

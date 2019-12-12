@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace OSBBConsoleApp
 {
+    // Сlass designed for fetching data from json file
     class BuildingFromJson
     {
         public string JsonFileName

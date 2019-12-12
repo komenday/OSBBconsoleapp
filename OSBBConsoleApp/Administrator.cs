@@ -59,56 +59,6 @@ namespace OSBBConsoleApp
             }
         }
 
-        private void ShowApartment(int number)
-        {
-            try
-            {
-                Apartment selected = Building.Apartments.First(x => x.Number == number);
-                Console.WriteLine($"Number: {selected.Number}\nArea: {selected.Area}\nAmount in the account: {selected.Account}\nMonthly rent: {selected.MonthlyRent}");
-
-                if (selected.Account < 0)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine($"DEBT {-selected.Account} UAH");
-                    Console.ResetColor();
-                }
-                else if (selected.Account - selected.MonthlyRent < 0)
-                {
-                    Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.WriteLine($"On account is not enough MONEY");
-                    Console.ResetColor();
-                }
-
-                Console.WriteLine("Citizens:");
-                foreach (var item in selected.Citizens)
-                {
-                    Console.WriteLine($"{item.FirstName} {item.LastName}");
-                }
-            }
-            catch (InvalidOperationException)
-            {
-                Console.WriteLine("Wrong apartment number");
-            }
-        }
-
-        private void ShowBuilding()
-        {
-            Console.WriteLine($"Address of this building: {Building.Address}");
-            if (Building.HasElevator) Console.WriteLine("Has elevator");
-            else Console.WriteLine("Hasn't elevator");
-            if (Building.HasYard) Console.WriteLine("Has yard");
-            else Console.WriteLine("Hasn't yard");
-            Console.WriteLine();
-            foreach (Apartment ap in Building.Apartments)
-            {
-                ShowApartment(ap.Number);
-                Console.WriteLine();
-            }
-            Console.WriteLine($"Cleaning frequency: {Building.CleaningFrequency}");
-            Console.WriteLine($"Garbage export frequency: {Building.GarbageExport}");
-            Console.WriteLine($"Plan maintenance frequency: {Building.MaintenanceFrequency}");
-        }
-
         private async void SaveInFile()
         {
             using (StreamWriter sw = new StreamWriter(BuildingFromJson.JsonFileName, false))
@@ -123,7 +73,7 @@ namespace OSBBConsoleApp
             Console.WriteLine("Welcome to OSBB manager!\n");
             do
             {
-                Console.WriteLine("\nChoose action:\n\n1\tMake a payment\n2\tRefill account\n3\tShow information about seperate apartment\n4\tShow information about building\n0\tExit\n\nEnter a digit: ");
+                Console.WriteLine("\nChoose action:\n\n1\tMake a payment\n2\tRefill account\n3\tShow information about seperate apartment\n4\tShow information about building\n5\tShow information about fund\n6\tWithdraw money from savings\n0\tExit\n\nEnter a digit: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -154,14 +104,36 @@ namespace OSBBConsoleApp
                         {
                             Console.WriteLine("Enter number of apartment:");
                             int num = Convert.ToInt32(Console.ReadLine());
-                            ShowApartment(num);
-                            Console.WriteLine();
+                            try
+                            {
+                                Apartment selected = Building.Apartments.First(x => x.Number == num);
+                                selected.ShowApartment();
+                                Console.WriteLine();
+                            }
+                            catch (InvalidOperationException)
+                            {
+                                Console.WriteLine("Wrong apartment number");
+                            }
                         }
                         break;
                     case 4:
                         {
-                            ShowBuilding();
+                            Building.ShowBuilding();
                             Console.WriteLine();
+                        }
+                        break;
+                    case 5:
+                        {
+                            Console.WriteLine(Fund);
+                            Console.WriteLine();
+                        }
+                        break;
+                    case 6:
+                        {
+                            Console.WriteLine("Enter a sum of withdraw:");
+                            int sum = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine();
+                            Fund.WithdrawSavings(sum);
                         }
                         break;
                     default:

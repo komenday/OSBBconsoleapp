@@ -28,5 +28,23 @@ namespace OSBBConsoleApp
         {
             MonthlyRentCalculator.Calculate(this);
         }
+
+        public void ShowBuilding()
+        {
+            Console.WriteLine($"Address of this building: {Address}");
+            if (HasElevator) Console.WriteLine("Has elevator");
+            else Console.WriteLine("Hasn't elevator");
+            if (HasYard) Console.WriteLine("Has yard");
+            else Console.WriteLine("Hasn't yard");
+            Console.WriteLine();
+            foreach (Apartment ap in Apartments)
+            {
+                ap.ShowApartment();
+                Console.WriteLine();
+            }
+            Console.WriteLine($"Cleaning frequency: {CleaningFrequency}");
+            Console.WriteLine($"Garbage export frequency: {GarbageExport}");
+            Console.WriteLine($"Plan maintenance frequency: {MaintenanceFrequency}");
+        }
     }
 }

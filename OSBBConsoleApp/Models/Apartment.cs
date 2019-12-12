@@ -48,5 +48,29 @@ namespace OSBBConsoleApp
             PayRent?.Invoke(this, new RentEventArgs(MonthlyRent));
             Account -= MonthlyRent;
         }
+
+        public void ShowApartment()
+        {
+            Console.WriteLine($"Number: {Number}\nArea: {Area}\nAmount in the account: {Account}\nMonthly rent: {MonthlyRent}");
+
+            if (Account < 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"DEBT {-Account} UAH");
+                Console.ResetColor();
+            }
+            else if (Account - MonthlyRent < 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($"On account is not enough MONEY");
+                Console.ResetColor();
+            }
+
+            Console.WriteLine("Citizens:");
+            foreach (var item in Citizens)
+            {
+                Console.WriteLine($"{item.FirstName} {item.LastName}");
+            }
+        }
     }
 }

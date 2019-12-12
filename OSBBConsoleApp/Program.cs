@@ -13,7 +13,5 @@ namespace OSBBConsoleApp
             Administrator administrator = new Administrator();
             administrator.Menu();
         }
-
-        
     }
 }
